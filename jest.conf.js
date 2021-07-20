@@ -8,7 +8,6 @@ module.exports = {
   reporters: ['default', ['jest-junit', { outputDirectory: './target/test-results/', outputName: 'TESTS-results-jest.xml' }]],
   testResultsProcessor: 'jest-sonar-reporter',
   testMatch: ['<rootDir>/src/main/webapp/app/**/@(*.)@(spec.ts)'],
-  testPathIgnorePatterns: ['<rootDir>/node_modules/'],
   testURL: 'http://localhost/',
 };
 
