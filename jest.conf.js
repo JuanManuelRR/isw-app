@@ -7,6 +7,7 @@ module.exports = {
   moduleNameMapper: mapTypescriptAliasToJestAlias(),
   reporters: ['default', ['jest-junit', { outputDirectory: './target/test-results/', outputName: 'TESTS-results-jest.xml' }]],
   testResultsProcessor: 'jest-sonar-reporter',
+  testPathIgnorePatterns: ['<rootDir>/node_modules/'],
   testMatch: ['<rootDir>/src/main/webapp/app/**/@(*.)@(spec.ts)'],
   testURL: 'http://localhost/',
 };
